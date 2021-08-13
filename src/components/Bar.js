@@ -21,40 +21,40 @@ const Bar = () => {
       fillSeriesColor: false,
       theme: false,
       style: {
-        fontSize: '12px',
-        fontFamily: undefined
+        fontSize: "12px",
+        fontFamily: undefined,
       },
       onDatasetHover: {
-          highlightDataSeries: false,
+        highlightDataSeries: false,
       },
       x: {
-          show: true,
-          format: 'dd MMM',
-          formatter: undefined,
+        show: true,
+        format: "dd MMM",
+        formatter: undefined,
       },
       y: {
-          formatter: undefined,
-          title: {
-              formatter: (seriesName) => seriesName,
-          },
+        formatter: undefined,
+        title: {
+          formatter: (seriesName) => seriesName,
+        },
       },
       z: {
-          formatter: undefined,
-          title: 'Size: '
+        formatter: undefined,
+        title: "Size: ",
       },
       marker: {
-          show: true,
+        show: true,
       },
       items: {
-         display: "flex",
+        display: "flex",
       },
       fixed: {
-          enabled: false,
-          position: 'topRight',
-          offsetX: 0,
-          offsetY: 0,
+        enabled: false,
+        position: "topRight",
+        offsetX: 0,
+        offsetY: 0,
       },
-  }
+    },
   });
   const [series, setSeries] = useState([
     {

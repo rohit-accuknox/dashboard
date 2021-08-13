@@ -12,57 +12,57 @@ const Sales = () => {
     },
     stroke: {
       show: true,
-      curve: 'smooth',
-      lineCap: 'butt',
+      curve: "smooth",
+      lineCap: "butt",
       colors: undefined,
       width: 2,
-      dashArray: 0,      
-  },
-  tooltip: {
-    enabled: true,
-    enabledOnSeries: undefined,
-    shared: true,
-    followCursor: false,
-    intersect: false,
-    inverseOrder: false,
-    custom: undefined,
-    fillSeriesColor: false,
-    theme: false,
-    style: {
-      fontSize: '12px',
-      fontFamily: undefined
+      dashArray: 0,
     },
-    onDatasetHover: {
+    tooltip: {
+      enabled: true,
+      enabledOnSeries: undefined,
+      shared: true,
+      followCursor: false,
+      intersect: false,
+      inverseOrder: false,
+      custom: undefined,
+      fillSeriesColor: false,
+      theme: false,
+      style: {
+        fontSize: "12px",
+        fontFamily: undefined,
+      },
+      onDatasetHover: {
         highlightDataSeries: false,
-    },
-    x: {
+      },
+      x: {
         show: true,
-        format: 'dd MMM',
+        format: "dd MMM",
         formatter: undefined,
-    },
-    y: {
+      },
+      y: {
         formatter: undefined,
         title: {
-            formatter: (seriesName) => seriesName,
+          formatter: (seriesName) => seriesName,
         },
-    },
-    z: {
+      },
+      z: {
         formatter: undefined,
-        title: 'Size: '
-    },
-    marker: {
+        title: "Size: ",
+      },
+      marker: {
         show: true,
-    },
-    items: {
-       display: "flex",
-    },
-    fixed: {
+      },
+      items: {
+        display: "flex",
+      },
+      fixed: {
         enabled: false,
-        position: 'topRight',
+        position: "topRight",
         offsetX: 0,
         offsetY: 0,
+      },
     },
-}
   });
   const [series, setSeries] = useState([
     {
@@ -93,7 +93,7 @@ const Sales = () => {
         });
         setSeries([
           {
-            name: "Visitors",
+            name: "sales",
             data: visit,
           },
         ]);
@@ -109,8 +109,8 @@ const Sales = () => {
         options={options}
         series={series}
         type="line"
-        height={160}
-        width={230}
+        height={200}
+        width={320}
       />
     </div>
   );
